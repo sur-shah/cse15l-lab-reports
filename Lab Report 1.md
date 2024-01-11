@@ -17,3 +17,13 @@ Directory as argument
 When using cd with an argument of a directory it will bring the user to that directory
 allowing them to access files or other directories within it.
 
+```
+File as an argument
+[user@sahara ~/lecture1]$ cd Hello.java
+bash: cd: Hello.java: Not a directory
+```
+Here when using a file as an argument for the cd command, it states that a file is not a directory meaning that it is unable to access said file.
+
+*ls*
+
+
