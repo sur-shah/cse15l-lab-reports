@@ -21,6 +21,8 @@ Horizontal Rule:
 'Inline Code' with backticks
 
 
-'''# code block
+'''
+# code block
 print '3 backticks or' 
-print 'indent 4 spaces''''
+print 'indent 4 spaces'
+'''
