@@ -57,6 +57,11 @@ When using a directory as an argument for the `ls` command, it lists the files n
 3. `ls` with file as an argument
 ```
 File as an argument
+[user@sahara ~/lecture1]$ ls Hello.java
+Hello.java
+```
+The `working directory` is the `lecture1` directory
+When using a file as an argument for the `ls` command, it prints out the name of the file that was presented in the argument.
 
 
 
