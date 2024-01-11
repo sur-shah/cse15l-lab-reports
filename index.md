@@ -18,7 +18,7 @@ __Hello, world!__
 Horizontal Rule:
 ---
 
-'Inline Code' with backticks
+`Inline Code` with backticks
 
 
 ```
