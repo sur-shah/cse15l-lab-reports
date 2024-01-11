@@ -7,22 +7,26 @@ __Hello, world!__
 
 > What is this used for
 
-* List
-* List
-* List
+* CSE 12
+* CSE 15L
+* MATH 20C
+* DOC 2
   
-1. One
-2. Two
-3. Three
+1. 9:30-10:50 Tu Thurs
+2. 9-9:50 MW
+3. 10-10:50 MWF
+4. 11-11:50 MWF
 
-Horizontal Rule:
+Horizontal Line:
 ---
 
-`Inline Code` with backticks
+`Inline Code` not using apostrophe
 
 
 ```
 # code block
-print '3 backticks or'
-print 'indent 4 spaces'
+This is working i think
+public static void main(String args[]){
+System.out.println("Hi");
+}
 ```
