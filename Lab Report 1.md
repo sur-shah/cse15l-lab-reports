@@ -81,7 +81,7 @@ There is no error present
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
 ```
-The `working directory` is the `/hoome/lecture1/` directory
+The `working directory` is the `/home/lecture1/` directory
 When using the `cat` command with a directory as an argument, it throws an error because you are inputting a directory. The `cat` command expects only files to be read.
 This is an error due to this.
 
