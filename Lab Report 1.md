@@ -74,7 +74,9 @@ When using a file as an argument for the `ls` command, it prints out the name of
 The `working directory` is the `/home/lecture1/` directory.
 When using the `cat` command with no arguments, the command reads from the terminal. It is expecting an argument but since there is none, it goes to the next line expecting this file.
 There is no error present
+
 2. `cat` with a directory as an argument
+   
 ```
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
@@ -82,6 +84,7 @@ cat: messages: Is a directory
 The `working directory` is the `/hoome/lecture1/` directory
 When using the `cat` command with a directory as an argument, it throws an error because you are inputting a directory. The `cat` command expects only files to be read.
 This is an error due to this.
+
 3. `cat` with a file as an argument.
 
 ```
