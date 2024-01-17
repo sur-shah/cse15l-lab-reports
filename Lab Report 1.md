@@ -83,6 +83,7 @@ The `working directory` is the `lecture1 directory`
 When using the `cat` command with a directory as an argument, it throws an error because you are inputting a directory. The `cat` command expects only files to be read.
 This is an error due to this.
 3. `cat` with a file as an argument.
+
 ```
 [user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
@@ -97,6 +98,7 @@ public class Hello {
   }
 }[user@sahara ~/lecture1]$
 ```
+
 The `working directory` is the `lecture1 directory`
 When using the `cat` command with a file as an argument, it will print out all of the code of the file into the terminal. In this case, I used the `Hello.java` file and it presented all lines of code in the program.
 There is no error here.
