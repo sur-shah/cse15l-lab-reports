@@ -84,6 +84,7 @@ The `working directory` is the `lecture1 directory`
 When using the `cat` command with a directory as an argument, it throws an error because you are inputting a directory. The `cat` command expects only files to be read.
 This is an error due to this.
 3. `cat` with a file as an argument.
+
 ```
 [user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
