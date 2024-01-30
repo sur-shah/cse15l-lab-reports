@@ -1,9 +1,8 @@
 # Lab Report 2
 
 ## code block for ChatServer
-``` class ChatHandler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
+```
+class ChatHandler implements URLHandler {
     private List<String> chatHist = new ArrayList<>();
     public String handleRequest(URI url) {
         
