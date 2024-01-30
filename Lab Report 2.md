@@ -31,6 +31,11 @@ class ChatHandler implements URLHandler {
     }
   ```
 ### screenshots using /add-message
+![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/a5558d9a-9434-466d-9ae0-08f8ee396fde)
+
+![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/638db62b-ed65-4863-be83-b523cc79d6d5)
+
+
 
 ### (Screenshot 1) Which methods in your code are called?
 In this screenshot, the `String handleRequest` method is called. Within this method, the `url.getQuery().split()`, `parameter.split()`, `message.isEmpty()`, `user.isEmpty`, `chatHist.add` , `String.join` are all called.
@@ -48,11 +53,11 @@ The same methods I mentioned earlier called with this screenshot as well. `Strin
 
 ### (Screenshot 2) What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
-In this case the relevant arguments to this method are the url for the handleRequest method. With this the `add-message` path is checked but since this time it is different, the resulting final values of the `message` to equal `Hi there` and `user` to equal `Sur` field will be different. However, the program will follow the same format as before going through the first split("&") with the important argument being "&" and the second one inside the for loop with the important argument being "=". Now when adding to the chatHist arrayList, it will add a second entry being `Hi+there: Sur`
+In this case the relevant arguments to this method are the url for the handleRequest method. With this the `add-message` path is checked but since this time it is different, the resulting final values of the `message` to equal `Hi there` and `user` to equal `Sur` field will be different. However, the program will follow the same format as before going through the first split("&") with the important argument being "&" and the second one inside the for loop with the important argument being "=". Now when adding to the chatHist arrayList, it will add a second entry being `Sur: Hi+there`
 
 ### (Screenshot 2) How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
-The values of the relevant fields of the class are changed with the `message` field being changed from "" to `Hi there` and the `user` being changed from "" to `Sur`. Also, the arrayList will now Look like `["jpolitz: Hello","Hi+there: Sur"]`
+The values of the relevant fields of the class are changed with the `message` field being changed from "" to `Hi there` and the `user` being changed from "" to `Sur`. Also, the arrayList will now Look like `["jpolitz: Hello","Sur: Hi+there"]`
 
 ### Private key
 ![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/45f96e34-003a-4249-91e5-0a33ce7a502c)
