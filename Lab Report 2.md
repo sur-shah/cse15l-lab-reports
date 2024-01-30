@@ -1,12 +1,11 @@
 # Lab Report 2
 
 ## code block for ChatServer
-
-`   class ChatHandler implements URLHandler {
+``` class ChatHandler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     private List<String> chatHist = new ArrayList<>();
-    public String handleRequest(URI url) {`
+    public String handleRequest(URI url) {
         
         if (url.getPath().equals("/add-message")) {
             String[] parameters = url.getQuery().split("&");
@@ -31,7 +30,7 @@
             return "404 Not Found!";
         }    
     }
-  `
+  ```
 ### screenshots using /add-message
 
 ### (Screenshot 1) Which methods in your code are called?
