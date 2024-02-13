@@ -76,6 +76,11 @@ These are the two code blocks. The first one is the before which is the incorrec
 
 ## Part 2 - Researching Commands
 
+`less -E chapter-10.txt`
+
+![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/b49d5fce-02a1-4d54-9f12-57e30b504198)
+
+
 
 
 
