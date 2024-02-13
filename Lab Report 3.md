@@ -10,14 +10,14 @@
 **A failure inducing input for the buggy program written as a JUnit Test.**
 
 
-`
+```
 @Test
   public void testReversed() {
     int[] input1 = {1,2,3,4};
     assertArrayEquals(new int[]{4,3,2,1}, ArrayExamples.reversed(input1));
   }
 }
-`
+```
 
 
 Here instead of returning [4,3,2,1] it will instead return [0,0,0,0]. This is because in the reverse method it is returning the input `arr` which is being cleared instead of the `newArray`. However, there is implementation issues that will be adressed later.
@@ -25,14 +25,14 @@ Here instead of returning [4,3,2,1] it will instead return [0,0,0,0]. This is be
 
 **An input that *doesn't* induce a failure**
 
-`
+```
 @Test
   public void testReversed() {
     int[] input1 = {0,0,0,0};
     assertArrayEquals(new int[]{0,0,0,0}, ArrayExamples.reversed(input1));
   }
 }
-`
+```
 
 
 Here when inputting an array of [0,0,0,0] the `reversed` method will also return [0,0,0,0]. When using the reverse array with all zeros, the values do not change, making this test case pass.
@@ -50,7 +50,7 @@ These are the two examples of the tests in which the first one fails and where t
 **The bug, as the before-and-after code change required to fix it**
 
 
-`
+```
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
@@ -58,10 +58,10 @@ static int[] reversed(int[] arr) {
     }
     return arr;
   }
-  `
+  ```
 
   
-  `
+  ```
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
@@ -69,7 +69,7 @@ static int[] reversed(int[] arr) {
     }
     return newArray;
   }
-  `
+  ```
 
   
 These are the two code blocks. The first one is the before which is the incorrect implementation of the reversed method. This is because it returns an array of all zeros. Instead, the fix in the second one is that it assigns the values of `newArray` to be the values of the input `arr` reversed correctly, without losing previous data.
