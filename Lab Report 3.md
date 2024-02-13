@@ -23,6 +23,7 @@ Here instead of returning [4,3,2,1] it will instead return [0,0,0,0]. This is be
 
 
 **An input that *doesn't* induce a failure**
+
 `@Test
   public void testReversed() {
     int[] input1 = {0,0,0,0};
@@ -35,6 +36,7 @@ Here instead of returning [4,3,2,1] it will instead return [0,0,0,0]. This is be
 Here when inputting an array of [0,0,0,0] the `reversed` method will also return [0,0,0,0]. When using the reverse array with all zeros, the values do not change, making this test case pass.
 
 **The sympton, as the output of running the tests**
+
 ![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/209fc69b-12b9-49ff-beaf-38057541d905)
 
 
@@ -44,6 +46,8 @@ Here when inputting an array of [0,0,0,0] the `reversed` method will also return
 These are the two examples of the tests in which the first one fails and where the second one passes.
 
 **The bug, as the before-and-after code change required to fix it**
+
+
 `static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
