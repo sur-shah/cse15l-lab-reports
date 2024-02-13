@@ -10,7 +10,8 @@
 **A failure inducing input for the buggy program written as a JUnit Test.**
 
 
-`@Test
+`
+@Test
   public void testReversed() {
     int[] input1 = {1,2,3,4};
     assertArrayEquals(new int[]{4,3,2,1}, ArrayExamples.reversed(input1));
@@ -24,7 +25,8 @@ Here instead of returning [4,3,2,1] it will instead return [0,0,0,0]. This is be
 
 **An input that *doesn't* induce a failure**
 
-`@Test
+`
+@Test
   public void testReversed() {
     int[] input1 = {0,0,0,0};
     assertArrayEquals(new int[]{0,0,0,0}, ArrayExamples.reversed(input1));
@@ -48,7 +50,8 @@ These are the two examples of the tests in which the first one fails and where t
 **The bug, as the before-and-after code change required to fix it**
 
 
-`static int[] reversed(int[] arr) {
+`
+static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = newArray[arr.length - i - 1];
@@ -58,7 +61,8 @@ These are the two examples of the tests in which the first one fails and where t
   `
 
   
-  `static int[] reversed(int[] arr) {
+  `
+  static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       newArray[i] = arr[arr.length - i - 1];
