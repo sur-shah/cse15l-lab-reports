@@ -141,7 +141,7 @@ Here, since the file `biomed-sizes.txt` is not larger than 1 megabyte, it was no
 
 Here, the directory `biomed` is smaller than 1 Mb, so all the files are listed within in the directory. If this was not the case, nothing would be printed.
 
-### type (file type)
+### -type (file type)
 
 **Example 3 - file**
 
