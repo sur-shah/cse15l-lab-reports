@@ -161,7 +161,7 @@ surshah@Surs-MacBook-Pro technical % find ./biomed -type d
 
 the `-type d` command line argument checks to see if the input paramater (in this case the directory `biomed`) is of type directory (d). Because it is in fact a directory, the name of the directory will be printed in the terminal.
 
-### print
+### -print
 
 **Example 4- file**
 
