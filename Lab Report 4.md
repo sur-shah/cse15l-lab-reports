@@ -11,4 +11,6 @@ Keys pressed: git clone https://github.com/sur-shah/lab7.git<enter>. These were 
 <img width="594" alt="Screenshot 2024-02-26 at 1 01 04 AM" src="https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/d6f73072-a355-4b5b-9611-b6c4548fd461">
 
 Keys pressed: cd lab7 ```<enter>, ls, <enter> ,<up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><enter>,<up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><enter> ``` I changed the current working directory to be into the new lab7 directory we just created with our
-git clone command. I then checked the contents of this new directory with the ls command.
+git clone command. I then checked the contents of this new directory with the ls command. I then pressed up 19 times and `enter` to retrieve and run the ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java```. This compiled all of the files ending in `.java`. After this, I pressed up another 19 and then `enter` after times to retrieve and run the ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` which ended up running all of the tests and providing the given output above.
+
+## Step 7:
