@@ -10,5 +10,5 @@ Keys pressed: git clone https://github.com/sur-shah/lab7.git<enter>. These were 
 ## Step 6:
 <img width="594" alt="Screenshot 2024-02-26 at 1 01 04 AM" src="https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/d6f73072-a355-4b5b-9611-b6c4548fd461">
 
-Keys pressed: cd lab7 ```<enter>, ls, <enter> ,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<up>,<enter>,<up> <up> <up> <up> <up> <up> <up> <up> <up> <up><up> <up> <up> <up> <up> <up> <up> <up> <up> <enter> ``` I changed the current working directory to be into the new lab7 directory we just created with our
+Keys pressed: cd lab7 ```<enter>, ls, <enter> ,<up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><enter>,<up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><up><enter> ``` I changed the current working directory to be into the new lab7 directory we just created with our
 git clone command. I then checked the contents of this new directory with the ls command.
