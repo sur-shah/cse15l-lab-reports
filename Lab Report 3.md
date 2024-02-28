@@ -73,6 +73,8 @@ I will be using the `find` command
 
 ### -mtime [x days] (file input)
 
+Source: [Linux Manual Page](https://man7.org/linux/man-pages/man1/find.1.html)
+
 **Example 1 - file**
 
 ```
@@ -105,8 +107,11 @@ Here, this command returns the file name if it has been modified within x days. 
 ```
 
 Here, since the `biomed` directory has been modified within the seven days as specified in the parameter, the command lists the files within the directory.
+https://man7.org/linux/man-pages/man1/find.1.html
 
 ### -size (size)
+
+Source: [Linux Manual Page](https://man7.org/linux/man-pages/man1/find.1.html)
 
 **Example 2 - file**
 
@@ -143,6 +148,8 @@ Here, the directory `biomed` is smaller than 1 Mb, so all the files are listed w
 
 ### -type (file type)
 
+Source: [Linux Manual Page](https://man7.org/linux/man-pages/man1/find.1.html)
+
 **Example 3 - file**
 
 ```
@@ -162,6 +169,8 @@ surshah@Surs-MacBook-Pro technical % find ./biomed -type d
 the `-type d` command line argument checks to see if the input paramater (in this case the directory `biomed`) is of type directory (d). Because it is in fact a directory, the name of the directory will be printed in the terminal.
 
 ### -print
+
+Source: [Linux Manual Page](https://man7.org/linux/man-pages/man1/find.1.html)
 
 **Example 4- file**
 
