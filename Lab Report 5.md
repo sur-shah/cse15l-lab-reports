@@ -17,11 +17,12 @@ It seems that the bug has to do with the `/chat` query in the `ChatServer.java` 
 
 ### 4: Contents:
 **File directory**
--`Chat-Server-Pro-Main`
-      -`chatserver'
-      -'lib`
-      -`Other files`
-      -`ChatServer.java`
+``` -Chat-Server-Pro-Main
+      -chatserver
+      -lib
+      -Other files
+      -ChatServer.java
+```
       
 The file that needed to be fixed was the `ChatServer.java` file
 
