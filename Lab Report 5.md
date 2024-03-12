@@ -3,35 +3,39 @@
 ## Debugging scenario
 
 ### 1: Original post from student:
-Hi, I was wondering why even after inputting the path arguments according to the instructions, I am recieving a blank screen. I should be seeing a message with "Sur: hello" correct?
-![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/97d0dee8-5fdc-4d54-a038-3c15ac102ea0)
+![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/1e7ed078-71a6-4031-9910-6d9caa63d929)
+
+Hello, I was wondering why that whenever I type in my path with incorrect paramaters, it still works as expected? Like in this case, I did not input `user` before `sur` and instead put `324ser =` and it still worked. Any help would be appreciated. Thank you!
+
 
 ### 2: TA Response on edstem:
-Hello, did you check that within your ChatServer.java file, that the arguments within the if statements are correct? For example: ensure that in an if statement like this `else if (url.getPath().equals("/save"))` that everything is spelled correctly. Additionally, ensure that your string splitting is proper. Another example would be to ensure that ` String[] shouldBeUser = params[0].split("=");` that the `=` character is not something else like `:`
-
+Hi, I know that I do not have access to your code, but in your `/chat` if statement, did you ensure that the parameters are being checked? By this I mean did you check that the parameters at those positions should be `user` and `message`? Please try this. Hope it helps!
 ### 3: Student fix
-**Website Output**
-![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/925a7775-84b6-4081-9579-25731d8ff3ca)
+![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/66d3e40f-84f5-40ae-b0c5-d024a123c0af)
 
-**Terminal Output**
-![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/a71bd86a-112f-477b-9fb5-fb9ca5bb2606)
+It seems that the bug has to do with the `/chat` query in the `ChatServer.java` file. I had to edit and create an if statement to ensure that the parameters at position 0 were checked to be proper. With this, it makes sure that within the path, `user` and `message` are the only arguments allowed for the messages and users. Without this, it allows anything before the `=` sign to work. So using a command `curl "http://localHost:4000/chat?'1412=sur&,qwenm1=hello"` would print a message `sur: hello` in the output, which is not correct.
 
-After looking at what the TA had replied to my post, I had found spelling errors within my ChatServer.java file. 
+### 4: Contents:
+**File directory**
+-`Chat-Server-Pro-Main`
+      -`chatserver'
+      -'lib`
+      -`Other files`
+      -`ChatServer.java`
+      
+The file that needed to be fixed was the `ChatServer.java` file
+
 **Code with problems**
 ```
-if (url.getPath().equals("/chet")) {
+if (url.getPath().equals("/chat")) {
       String[] params = url.getQuery().split("&");
-      String[] shouldBeUser = params[0].split(":");
+      String[] shouldBeUser = params[0].split("=");
       String[] shouldBeMessage = params[1].split("=");
-      if (shouldBeUser[0].equals("user") && shouldBeMessage[0].equals("message")) {
-        String user = shouldBeUser[1];
-        String message = shouldBeMessage[1];
-        this.chatHistory += user + ": " + message + "\n\n";
-        return this.chatHistory;
-      } else {
-        return "Invalid parameters: " + String.join("&", params);
-      }
-    }
+      String user = shouldBeUser[1];
+      String message = shouldBeMessage[1];
+      this.chatHistory += user + ": " + message + "\n\n";
+      return this.chatHistory;
+  }
 ```
 **Code with fixes**
 ```
@@ -49,8 +53,21 @@ if (url.getPath().equals("/chat")) {
       }
     }
 ```
-This was my original code that I had. As it is visible, in the if statement, there is a spelling error with `/chet` when it is supposed to be `/chat` Doing this made it so that I was unable to run the website with the expected output and input of `http://localhost:4000/chat?user=sur&message=hello`
-Another minor error was in the `shouldBeUser` varialbe in which it states `params[0].split(":");` when in reality it should be `params[0].split("=");`
-This made it so that it would invoke invalid parameters as it would not properly split the string in the path. 
+**Command line argument to test the bugs**
+In a seperate terminal:
+`curl "http://localHost:4000/chat?user=sur&message=hello"`
+**Explanation of edits needed**
+
+After looking at the TA feedback, I had found that it was important to implement an if statmenet checking if the string of the `shouldBeUser` array, at index 0 (because of the split) is equal to to the string `user`. A similar approach is attached on for the `shouldBeMessage` array. By adding the if statement `if (shouldBeUser[0].equals("user") && shouldBeMessage[0].equals("message"))`, it checks these things and if the input does not match this, then it will print that the parameters being used are invalid. I created a bash script to compile and run the server. Here is how I did that:
+![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/27ba6e6e-a0c2-4e50-bbf5-76f9da95c4e9)
+
+## Reflection:
+
+One thing that I never thought I would be able to do, that I learned in my lab experience within the second half of the quarter was creating an autograder. I was always really confused on how exactly this was achieved, but actually coding a `grade.sh` script was truly interesting to me and was one of my favorite things throughout the quarter.
+
+
+
+
+
 
 
