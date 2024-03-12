@@ -17,7 +17,8 @@ It seems that the bug has to do with the `/chat` query in the `ChatServer.java` 
 
 ### 4: Contents:
 **File directory**
-``` -Chat-Server-Pro-Main
+```
+ -Chat-Server-Pro-Main
       -chatserver
       -lib
       -Other files
