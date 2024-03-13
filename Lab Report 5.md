@@ -176,7 +176,7 @@ class ChatServer {
 ```
 **Command line argument to test the bugs**
 In a seperate terminal:
-`curl "http://localHost:4000/chat?user=sur&message=hello"`
+`curl "http://localhost:4000/chat?324ser=sur&message=hello"`
 **Explanation of edits needed**
 
 After looking at the TA feedback, I had found that it was important to implement an if statmenet checking if the string of the `shouldBeUser` array, at index 0 (because of the split) is equal to to the string `user`. A similar approach is attached on for the `shouldBeMessage` array. By adding the if statement `if (shouldBeUser[0].equals("user") && shouldBeMessage[0].equals("message"))`, it checks these things and if the input does not match this, then it will print that the parameters being used are invalid. I created a bash script to compile and run the server. Here is how I did that:
