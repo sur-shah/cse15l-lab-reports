@@ -12,7 +12,7 @@ Keys pressed: ```git clone git@github.com:sur-shah/lab7.git lab7ssh <enter>```. 
 ## Step 6:
 <img width="594" alt="Screenshot 2024-02-26 at 1 01 04 AM" src="https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/d6f73072-a355-4b5b-9611-b6c4548fd461">
 
-Keys pressed: ```cd lab7ssh <enter``` ```vim test.sh``` ```:q!``` ```bash test.sh <enter>``` I changed the current working directory to be into the new lab7 directory we just created with our
+Keys pressed: ```cd lab7ssh <enter>``` ```vim test.sh``` ```:q!``` ```bash test.sh <enter>``` I changed the current working directory to be into the new lab7 directory we just created with our
 git clone command. I then checked the contents of this new directory with the ls command. Then, I saw that there was a test.sh script, and utilized vim to open and view the contents. After this, I saw that it contained the script to compile and run the test needed. So then I quit out of the vim editor and ran the script to get the desired test failure output given above.
 
 ## Step 7:
@@ -22,7 +22,8 @@ Keys pressed: ``` vim ListExamples.java <enter>, :44 <enter>, e r2 :wq! <enter>`
 
 ## Step 8:
 ![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/8ccdccef-bbe2-401d-b63b-2b61150a1447)
-Keys Pressed: ```bash test.sh <enter>``` I reran the bash script to run the tests needed. This gave the output above displaying that the tests passed after the fixes in VIM. Instead of doing ```bash test.sh <enter>``` I could have also done ```<up> <up> enter``` to access the same ```bash test.sh``` command. By doing this, it ran the tests, and in the picture it is clear to see that all tests passed.
+
+Keys Pressed: ```<up> <up> enter``` I reran the bash script to run the tests needed. This gave the output above displaying that the tests passed after the fixes in VIM. Instead of doing ```<up> <up> enter``` I could have also done ```bash test.sh <enter>``` to access the same command. By doing this, it ran the tests, and in the picture it is clear to see that all tests passed.
 
 ## Step 9:
 ![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/bc1bcb9a-c483-4edc-a9cf-318283106b2a)
