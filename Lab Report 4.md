@@ -26,6 +26,6 @@ Keys Pressed: ```bash test.sh <enter>``` I reran the bash script to run the test
 
 ## Step 9:
 ![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/bc1bcb9a-c483-4edc-a9cf-318283106b2a)
-Keys pressed: ```git add ListExamples.java <enter>, git commit -m "ListExamples.java updated" <enter>, git push <enter>```. Here, the changes made to the `ListExamples.java` file were added, and then they were committed. They were committed with the message seen above "ListExamples.java updated". I then pushed it to update the remote repository on github.
+Keys pressed: ```git add ListExamples.java <enter>, git commit -m "ListExamples.java updated" <enter>, git push <enter>```. Here, the changes made to the `ListExamples.java` file were added, and then they were committed. They were committed with the message seen above "ListExamples.java updated". I then pushed it to update the remote repository on GitHub.
 
 
