@@ -12,7 +12,7 @@ Keys pressed: ```git clone git@github.com:sur-shah/lab7.git lab7ssh <enter>```. 
 ## Step 6:
 <img width="594" alt="Screenshot 2024-02-26 at 1 01 04 AM" src="https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/d6f73072-a355-4b5b-9611-b6c4548fd461">
 
-Keys pressed: ```cd lab7 <enter``` ```vim test.sh``` ```:q!``` ```bash test.sh <enter>``` I changed the current working directory to be into the new lab7 directory we just created with our
+Keys pressed: ```cd lab7ssh <enter``` ```vim test.sh``` ```:q!``` ```bash test.sh <enter>``` I changed the current working directory to be into the new lab7 directory we just created with our
 git clone command. I then checked the contents of this new directory with the ls command. Then, I saw that there was a test.sh script, and utilized vim to open and view the contents. After this, I saw that it contained the script to compile and run the test needed. So then I quit out of the vim editor and ran the script to get the desired test failure output given above.
 
 ## Step 7:
@@ -26,6 +26,6 @@ Keys Pressed: ```bash test.sh <enter>``` I reran the bash script to run the test
 
 ## Step 9:
 ![image](https://github.com/sur-shah/cse15l-lab-reports/assets/156368641/bc1bcb9a-c483-4edc-a9cf-318283106b2a)
-Keys pressed: ```git add ListExamples.java <enter>, git commit -m "ListExamples.java updated" <enter>, git push```. Here, the changes made to the `ListExamples.java` file were added, and then they were committed. They were committed with the message seen above "ListExamples.java updated". I then pushed it to update the repository.
+Keys pressed: ```git add ListExamples.java <enter>, git commit -m "ListExamples.java updated" <enter>, git push <enter>```. Here, the changes made to the `ListExamples.java` file were added, and then they were committed. They were committed with the message seen above "ListExamples.java updated". I then pushed it to update the remote repository on github.
 
 
